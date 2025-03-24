@@ -1,0 +1,279 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="topbar">
+        <h2>WIP</h2>
+        <div class="topbar-right">
+            <i class="fa-solid fa-bell menu-icon" style="font-size: 1.2rem;"></i>
+            <img src="https://m.media-amazon.com/images/I/31yDc0hI9nL.jpg" class="topbar-icon" alt="User">
+            <i class="fa-solid fa-gear menu-icon" style="font-size: 1.2rem;"></i>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="https://cdn2.iconfinder.com/data/icons/action-states-vol-4-flat/48/Action___States_-_Vol._4-40-512.png"
+                alt="Logo" class="sidebar-logo-img">
+        </div>
+        <ul class="sidebar-nav">
+            <li><i class="fa-solid fa-gauge menu-icon"></i>Dashboard</li>
+            <li><i class="fa-solid fa-bars menu-icon"></i>Top Navbar</li>
+            <li><i class="fa-solid fa-code menu-icon"></i>Front End</li>
+            <li><i class="fa-solid fa-envelope menu-icon"></i>Email Templates</li>
+            <li><i class="fa-solid fa-file menu-icon"></i>Pages</li>
+            <li><i class="fa-solid fa-toolbox menu-icon"></i>Utility</li>
+            <li><i class="fa-solid fa-palette menu-icon"></i>UI Elements</li>
+            <li><i class="fa-solid fa-table menu-icon"></i>Tables</li>
+            <li><i class="fa-solid fa-infinity menu-icon"></i>Unlimited Menu</li>
+            <li><i class="fa-solid fa-file-signature menu-icon"></i>Forms</li>
+            <li><i class="fa-solid fa-chart-pie menu-icon"></i>Charts</li>
+            <li><i class="fa-solid fa-map-location-dot menu-icon"></i>Maps</li>
+            <li><i class="fa-solid fa-icons menu-icon"></i>Icons</li>
+            <li><i class="fa-solid fa-book menu-icon"></i>Documentation</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-header">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="https://icons.veryicon.com/png/System/iOS%207/Transport%20Speedometer.png"
+                        alt="Dashboard Icon">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card sales-card">
+                <div class="sales-content">
+                    <h3>Sales <span>This Week</span></h3>
+                    <div class="value">233</div>
+                    <div class="percentage">↑41% $</div>
+                </div>
+                <div class="sales-image"></div>
+            </div>
+
+            <div class="card downloads-card">
+                <div class="downloads-content">
+                    <h3>Downloads <span>This Year</span></h3>
+                    <div class="value">233</div>
+                    <div class="percentage">↑41% $</div>
+                </div>
+                <div class="downloads-image"></div>
+            </div>
+
+            <div class="card comments-card">
+                <div class="comments-content">
+                    <h3>Comments <span>This Month</span></h3>
+                    <div class="value">2,987</div>
+                    <div class="percentage">↑41% $</div>
+                </div>
+                <div class="comments-image"></div>
+            </div>
+        </div>
+
+        <div class="activity-chart-container">
+            <div class="cards-left">
+
+                <div class="card bar-chart-card" id="card-torres">
+                    <h3>Gráfico de Torres</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+
+
+                <div class="card active-users-card" id="card-active-users">
+                    <div class="active-users-content">
+                        <h3>Active Users <span>This Month</span></h3>
+                        <div class="value">38</div>
+                        <div class="percentage">↑70%</div>
+                    </div>
+                    <div class="active-users-image"></div>
+                </div>
+
+                <div class="card active-users-card" id="card-total-users">
+                    <div class="active-users-content">
+                        <h3>Total Users <span>This Year</span></h3>
+                        <div class="value">5,033</div>
+                        <div class="percentage">↑23%</div>
+                    </div>
+                    <div class="active-users-image"></div>
+                </div>
+
+                <div class="card active-users-card" id="card-profit">
+                    <div class="active-users-content">
+                        <h3>Profit <span>Projected</span></h3>
+                        <div class="value">$598,233</div>
+                        <div class="percentage">↑48%</div>
+                    </div>
+                    <div class="active-users-image"></div>
+                </div>
+
+                <div class="card active-users-card" id="card-returns">
+                    <div class="active-users-content">
+                        <h3>Returns <span>This Year</span></h3>
+                        <div class="value">33</div>
+                        <div class="percentage">↑23%</div>
+                    </div>
+                    <div class="active-users-image"></div>
+                </div>
+            </div>
+
+            <div>
+
+                <div class="card pie-chart-card">
+                    <h3>Gráficos de Pizza</h3>
+                    <div class="pie-charts-container">
+
+                        <div class="pie-chart-wrapper">
+                            <canvas id="pieChart1"></canvas>
+                            <div class="pie-chart-text">40%</div>
+                        </div>
+
+
+                        <div class="pie-chart-wrapper">
+                            <canvas id="pieChart2"></canvas>
+                            <div class="pie-chart-text">50%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="chart-container">
+                    <h3>Gráfico de Vendas Mensais</h3>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
+                datasets: [{
+                    label: 'Vendas Mensais',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    backgroundColor: 'rgba(52, 152, 219, 0.2)',
+                    borderColor: 'rgba(52, 152, 219, 1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(52, 152, 219, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(52, 152, 219, 1)',
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        const pieCtx1 = document.getElementById('pieChart1').getContext('2d');
+        const pieChart1 = new Chart(pieCtx1, {
+            type: 'doughnut',
+            data: {
+                labels: ['Categoria A', 'Categoria B', 'Categoria C'],
+                datasets: [{
+                    data: [40, 30, 30],
+                    backgroundColor: ['#3498db', '#00b894', '#f39c12'],
+                    borderWidth: 0,
+                }]
+            },
+            options: {
+                cutout: '70%',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+            }
+        });
+
+
+        const pieCtx2 = document.getElementById('pieChart2').getContext('2d');
+        const pieChart2 = new Chart(pieCtx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['Categoria X', 'Categoria Y', 'Categoria Z'],
+                datasets: [{
+                    data: [50, 25, 25],
+                    backgroundColor: ['#3498db', '#00b894', '#f39c12'],
+                    borderWidth: 0,
+                }]
+            },
+            options: {
+                cutout: '70%',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+            }
+        });
+
+
+        const barCtx = document.getElementById('barChart').getContext('2d');
+        const barChart = new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Categoria 1', 'Categoria 2', 'Categoria 3', 'Categoria 4', 'Categoria 5', 'Categoria 6', 'Categoria 7'],
+                datasets: [{
+                    label: 'Valores',
+                    data: [50, 25, 35, 45, 30, 40, 20],
+                    backgroundColor: ['#3498db', '#00b894', '#f39c12', '#9b59b6', '#e74c3c', '#1abc9c', '#2ecc71'],
+                    borderWidth: 0,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            display: false,
+                        },
+                    },
+                    x: {
+                        grid: {
+                            display: false,
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
